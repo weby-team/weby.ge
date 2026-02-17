@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import { cookies } from "next/headers";
 import { Manrope, Syne } from "next/font/google";
 import "./globals.css";
 import { ScrollToTopOnLoad } from "@/components/ScrollToTopOnLoad";
-import { defaultLocale, type Locale } from "@/i18n/translations";
+import { defaultLocale } from "@/i18n/translations";
 
 const bodyFont = Manrope({
   variable: "--font-body",
@@ -43,20 +42,13 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const cookieStore = await cookies();
-  const cookieLocale = cookieStore.get("locale")?.value;
-  const htmlLocale: Locale =
-    cookieLocale === "ka" || cookieLocale === "en"
-      ? cookieLocale
-      : defaultLocale;
-
   return (
-    <html lang={htmlLocale}>
+    <html lang={defaultLocale}>
       <body
         suppressHydrationWarning
         className={`${bodyFont.variable} ${displayFont.variable} bg-background font-sans text-foreground antialiased`}
