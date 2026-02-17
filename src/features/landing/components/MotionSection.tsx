@@ -181,7 +181,7 @@ function ThrowImage({ item, progress, reduceMotion }: ThrowImageProps) {
           className={`h-full w-full rounded-2xl object-cover transition-opacity duration-500 ${
             isLoaded ? "opacity-100" : "opacity-0"
           }`}
-          onLoadingComplete={() => setIsLoaded(true)}
+          onLoad={() => setIsLoaded(true)}
           onError={() => setIsLoaded(true)}
         />
         <MediaLoader isLoaded={isLoaded} />

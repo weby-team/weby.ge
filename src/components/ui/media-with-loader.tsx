@@ -53,7 +53,7 @@ export function ImageWithLoader({
   wrapperClassName,
   loaderClassName,
   className,
-  onLoadingComplete,
+  onLoad,
   onError,
   ...props
 }: ImageWithLoaderProps) {
@@ -68,9 +68,9 @@ export function ImageWithLoader({
           isLoaded ? "opacity-100" : "opacity-0",
           className,
         )}
-        onLoadingComplete={(image) => {
+        onLoad={(event) => {
           setIsLoaded(true);
-          onLoadingComplete?.(image);
+          onLoad?.(event);
         }}
         onError={(event) => {
           setIsLoaded(true);
