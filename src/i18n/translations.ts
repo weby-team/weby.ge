@@ -153,7 +153,7 @@ const translations: Record<Locale, Translations> = {
       ariaToGeorgian: "Switch to Georgian",
     },
     hero: {
-      title: "Powered By WebBuilders",
+      title: "Powered By Weby",
     },
     about: {
       lines: [
@@ -336,7 +336,7 @@ const translations: Record<Locale, Translations> = {
       ariaToGeorgian: "გადართე ქართულზე",
     },
     hero: {
-      title: "Powered By WebBuilders",
+      title: "Powered By Weby",
     },
     about: {
       lines: [
