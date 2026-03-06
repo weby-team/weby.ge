@@ -1,4 +1,4 @@
-# Lumen Trio Portfolio
+# Weby Portfolio
 
 Modern, single-page portfolio landing site for a three-person development studio. Built with Next.js App Router, TypeScript, and Tailwind CSS, featuring restrained motion and a lightweight 3D accent.
 

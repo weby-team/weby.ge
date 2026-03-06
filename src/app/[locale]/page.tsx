@@ -44,7 +44,7 @@ export default async function Home({ params }: PageProps) {
       </main>
       <footer className="border-t border-white/10 bg-background py-10">
         <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 px-6 text-sm text-muted sm:flex-row sm:items-center sm:justify-between">
-          <p>© 2025 Lumen Trio. All rights reserved.</p>
+          <p>© 2025 Weby. All rights reserved.</p>
           <div className="flex items-center gap-4">
             <a
               href="https://www.linkedin.com"

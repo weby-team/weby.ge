@@ -23,22 +23,31 @@ const displayFont = Syne({
 
 export const metadata: Metadata = {
   title: {
-    default: "Lumen Trio - Portfolio Studio",
-    template: "%s | Lumen Trio",
+    default: "Weby",
+    template: "%s | Weby",
   },
   description:
     "A modern portfolio landing page for a three-person studio specializing in premium web experiences.",
   openGraph: {
-    title: "Lumen Trio - Portfolio Studio",
+    title: "Weby",
     description:
       "A modern portfolio landing page for a three-person studio specializing in premium web experiences.",
     type: "website",
+    images: [
+      {
+        url: "/images/weby-logo.png",
+        width: 1536,
+        height: 1536,
+        alt: "Weby logo",
+      },
+    ],
   },
   twitter: {
-    card: "summary",
-    title: "Lumen Trio - Portfolio Studio",
+    card: "summary_large_image",
+    title: "Weby",
     description:
       "A modern portfolio landing page for a three-person studio specializing in premium web experiences.",
+    images: ["/images/weby-logo.png"],
   },
 };
 
