@@ -4,6 +4,14 @@ import "./globals.css";
 import { ScrollToTopOnLoad } from "@/components/ScrollToTopOnLoad";
 import { defaultLocale } from "@/i18n/translations";
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://weby.ge";
+const normalizedSiteUrl = siteUrl.startsWith("http")
+  ? siteUrl
+  : `https://${siteUrl}`;
+const siteOrigin = normalizedSiteUrl.replace(/\/$/, "");
+const socialImagePath = "/images/weby-logo.jpg";
+const socialImageUrl = `${siteOrigin}${socialImagePath}`;
+
 const bodyFont = Manrope({
   variable: "--font-body",
   subsets: ["latin"],
@@ -22,22 +30,30 @@ const displayFont = Syne({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(normalizedSiteUrl),
   title: {
     default: "Weby",
     template: "%s | Weby",
+  },
+  alternates: {
+    canonical: "/",
   },
   description:
     "A modern portfolio landing page for a three-person studio specializing in premium web experiences.",
   openGraph: {
     title: "Weby",
+    url: "/",
+    siteName: "Weby",
     description:
       "A modern portfolio landing page for a three-person studio specializing in premium web experiences.",
     type: "website",
     images: [
       {
-        url: "/images/weby-logo.png",
-        width: 1536,
-        height: 1536,
+        url: socialImageUrl,
+        secureUrl: socialImageUrl,
+        type: "image/jpeg",
+        width: 2000,
+        height: 2000,
         alt: "Weby logo",
       },
     ],
@@ -47,7 +63,7 @@ export const metadata: Metadata = {
     title: "Weby",
     description:
       "A modern portfolio landing page for a three-person studio specializing in premium web experiences.",
-    images: ["/images/weby-logo.png"],
+    images: [socialImageUrl],
   },
 };
 
