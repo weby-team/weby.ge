@@ -26,7 +26,7 @@ const projectBase = {
   },
   steel: {
     stack: ["Three.js", "Next.js", "Contentful", "Netlify"],
-    link: "https://steelcompany.netlify.app/",
+    link: "https://www.lilienstore.com/",
   },
 } as const;
 
