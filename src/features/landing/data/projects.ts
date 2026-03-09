@@ -25,7 +25,7 @@ const projectBase = {
     link: "https://guide-in-kutaisi.netlify.app/",
   },
   steel: {
-    stack: ["Three.js", "Framer Motion", "Contentful", "Vercel"],
+    stack: ["Three.js", "Next.js", "Contentful", "Netlify"],
     link: "https://steelcompany.netlify.app/",
   },
 } as const;
@@ -58,10 +58,10 @@ const projectsByLocale: Record<Locale, Project[]> = {
     },
     {
       id: "steel",
-      title: "Steel Company",
+      title: "Lilien Store",
       description:
-        "Interactive corporate microsite highlighting advanced steel products, technology showcases, and immersive visual storytelling.",
-      focus: "Visual R&D showcase",
+        "Modern e-commerce storefront focused on clear product discovery, smooth browsing, and fast checkout.",
+      focus: "e-commerce",
       ...projectBase.steel,
     },
   ],
@@ -92,10 +92,10 @@ const projectsByLocale: Record<Locale, Project[]> = {
     },
     {
       id: "steel",
-      title: "Steel Company",
+      title: "Lilien Store",
       description:
-        "ინტერაქტიული კორპორატიული მიკროსაიტი, რომელიც უსვამს ხაზს მოწინავე ფოლადის პროდუქტებს, ტექნოლოგიურ შოუებს და იმერსიულ ვიზუალურ თხრობას.",
-      focus: "ვიზუალური R&D შოუ",
+        "თანამედროვე e-commerce storefront, რომელიც ფოკუსირებულია პროდუქტის მკაფიო წარმოჩენაზე, მარტივ ნავიგაციასა და სწრაფ checkout-ზე.",
+      focus: "e-commerce",
       ...projectBase.steel,
     },
   ],

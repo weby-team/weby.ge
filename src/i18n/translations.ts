@@ -245,9 +245,9 @@ const translations: Record<Locale, Translations> = {
           },
         },
         steel: {
-          title: "Preview of website - Steel Company.",
+          title: "Preview of website - Lilien Store.",
           subtitle:
-            "An immersive corporate platform showcasing advanced steel products and innovation.",
+            "A clean e-commerce experience built for easy product discovery and fast checkout.",
           teamLine:
             "Our Team created full responsive Web site with unique Ul/UX design for Steel Company.",
           detail:
@@ -428,24 +428,24 @@ const translations: Record<Locale, Translations> = {
           },
         },
         steel: {
-          title: "ვებგვერდის პრევიუ — Steel Company.",
+          title: "ვებგვერდის პრევიუ — Lilien Store.",
           subtitle:
-            "იმერსიული კორპორატიული პლატფორმა, რომელიც აჩვენებს მოწინავე ფოლადის პროდუქტებსა და ინოვაციას.",
+            "სუფთა e-commerce გამოცდილება, რომელიც შექმნილია მარტივი პროდუქტის ძიებისა და სწრაფი checkout-ისთვის.",
           teamLine:
-            "ჩვენმა გუნდმა Steel Company-ისთვის შექმნა სრულად რისპონსივი ვებგვერდი უნიკალური UI/UX დიზაინით.",
+            "ჩვენმა გუნდმა Lilien Store-ისთვის შექმნა სრულად რესპონსიული e-commerce ვებსაიტი გამორჩეული UI/UX დიზაინით.",
           detail:
-            "Steel Company არის ინტერაქტიული კორპორატიული მიკროსაიტი, რომელიც უსვამს ხაზს მოწინავე ფოლადის პროდუქტებს, ტექნოლოგიურ შოუებს და იმერსიულ ვიზუალურ თხრობას.",
+            "Lilien Store არის თანამედროვე e-commerce პლატფორმა მკაფიო კატალოგით, მარტივი ნავიგაციით და სწრაფი checkout პროცესით.",
           images: {
             primary: [
-              "Steel Company გვერდის პრევიუ ერთი",
-              "Steel Company გვერდის პრევიუ ორი",
+              "Lilien Store გვერდის პრევიუ ერთი",
+              "Lilien Store გვერდის პრევიუ ორი",
             ],
-            desktop: "Steel Company დესკტოპის განლაგება",
+            desktop: "Lilien Store დესკტოპის განლაგება",
             mockups: [
-              "Steel მაკაპი ერთი",
-              "Steel მაკაპი ორი",
-              "Steel მაკაპი სამი",
-              "Steel მაკაპი ოთხი",
+              "Lilien Store მაკაპი ერთი",
+              "Lilien Store მაკაპი ორი",
+              "Lilien Store მაკაპი სამი",
+              "Lilien Store მაკაპი ოთხი",
             ],
           },
         },

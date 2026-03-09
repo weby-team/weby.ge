@@ -20,7 +20,7 @@ const maeliPreviewImages = ["/images/maeli1.png", "/images/maeli2.png"];
 
 const kutaisiPreviewImages = ["/images/kutaisi1.png", "/images/kutaisi2.png"];
 
-const steelPreviewImages = ["/images/steel1.png", "/images/steel2.png"];
+const steelPreviewImages = ["/images/lilien-1.png", "/images/lilien-2.png"];
 
 const memorifyPlaceholder =
   "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><rect width='32' height='32' fill='%23111827'/></svg>";
@@ -625,7 +625,7 @@ return (
       <div className="mx-auto flex w-[calc(97vw-3rem)] max-w-[520px] justify-center">
         {showPrimaryImages ? (
           <ImageWithLoader
-            src="/images/steel1.png"
+            src="/images/lilien-1.png"
             alt={copy.images.primary[0]}
             width={1200}
             height={900}
@@ -646,7 +646,7 @@ return (
       <div className="mx-auto flex w-[calc(97vw-3rem)] max-w-[520px] justify-center">
         {showPrimaryImages ? (
           <ImageWithLoader
-            src="/images/steel2.png"
+            src="/images/lilien-2.png"
             alt={copy.images.primary[1]}
             width={1200}
             height={900}
@@ -667,7 +667,7 @@ return (
       <div className="mx-auto flex w-[calc(97vw-3rem)] max-w-[520px] justify-center">
         {showPrimaryImages ? (
           <ImageWithLoader
-            src="/images/steel3.png"
+            src="/images/lilien-3.png"
             alt={copy.images.desktop}
             width={1200}
             height={900}
@@ -719,7 +719,7 @@ return (
         </p>
         {showPrimaryImages ? (
           <ImageWithLoader
-            src="/images/steel3.png"
+            src="/images/lilien-3.png"
             alt={copy.images.desktop}
             width={1200}
             height={900}
@@ -741,10 +741,10 @@ return (
         </h4>
 <div className="mx-auto mt-8 grid w-full max-w-5xl grid-cols-2 gap-6">
   {[
-    "/images/steel_mockupA.png",
-    "/images/steel_mockupB.png",
-    "/images/steel_mockupC.png",
-    "/images/steel_mockupE.jpg",
+    "/images/lili_mockup.webp",
+    "/images/lili_mockup2.webp",
+    "/images/lili_mockup3.webp",
+    "/images/lili_mockup4.webp",
   ].map((src, index) => (
     <div
       key={src}
