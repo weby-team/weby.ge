@@ -157,11 +157,11 @@ const translations: Record<Locale, Translations> = {
     },
     about: {
       lines: [
-        "We build high-quality business",
-        "websites that combine strategy,",
-        "performance, and design dY`O helping",
-        "companies grow credibility, attract",
-        "customers.",
+        "We create high-quality websites for businesses",
+        "and various companies, Our strategy is to provide a client-specific design",
+        "and interface that is of the highest level,",
+        "based on the client's requirements.",
+        
       ],
       sliderAlt: {
         one: "Slider 1",
@@ -172,9 +172,9 @@ const translations: Record<Locale, Translations> = {
     projects: {
       header: {
         eyebrow: "Our projects",
-        title: "Selected work across product, platform, and brand.",
+        title: "A selection of our recent work, showcasing strategy, design, and development in action",
         description:
-          "A snapshot of the challenges we solve: conversion, performance, and visual storytelling.",
+          "Each project reflects our commitment to quality, performance, and user-focused design.",
       },
       label: "Projects",
       visit: "Visit website",
@@ -249,13 +249,13 @@ const translations: Record<Locale, Translations> = {
           subtitle:
             "A clean e-commerce experience built for easy product discovery and fast checkout.",
           teamLine:
-            "Our Team created full responsive Web site with unique Ul/UX design for Steel Company.",
+            "Our Team created full responsive Web site with unique Ul/UX design for Lilien store.",
           detail:
-            "Steel Company is an interactive corporate microsite highlighting advanced steel products, technology showcases, and immersive visual storytelling.",
+            "Lilien Store is an interactive e-commerce platform designed to provide a seamless shopping experience with intuitive navigation, engaging visuals, and efficient checkout processes.",
           images: {
             primary: [
-              "Steel Company page preview one",
-              "Steel Company page preview two",
+              "Lilien Store page preview one",
+              "Lilien Store page preview two",
             ],
             desktop: "Steel Company desktop layout",
             mockups: [
@@ -284,11 +284,11 @@ const translations: Record<Locale, Translations> = {
     contact: {
       header: {
         eyebrow: "Contact us",
-        title: "Let us design the next chapter of your product.",
+        title: "We help turn ideas into well-built products.",
         description:
-          "Bring a vision, a challenge, or a launch date. We will help you craft something memorable.",
+          "Have a business, idea, challenge, or launch in mind? Get in touch — we’ll turn it into a real product.",
       },
-      badge: "dY`? Eyes",
+      badge: "",
       eyes: {
         success: "Got your message! We'll respond soon.",
         missingAt: "Missing @",
@@ -340,11 +340,11 @@ const translations: Record<Locale, Translations> = {
     },
     about: {
       lines: [
-        "ვქმნით მაღალი ხარისხის ბიზნეს",
-        "ვებგვერდებს, რომლებიც აერთიანებს სტრატეგიას,",
-        "შესრულებასა და დიზაინს —",
-        "კომპანიებს ეხმარება ნდობის ზრდაში და",
-        "კლიენტების მოზიდვაში.",
+        "ჩვენ ვქმნით მაღალი ხარისხის ვებსაიტებს",
+        "ბიზნესებისა და სხვადასხვა კომპანიებისთვის.",
+        "ჩვენი სტრატეგია არის, კლიენტზე მორგებული დიზაინი",
+        "და ინტერფეისი იყოს უმაღლესი დონის,",
+        "კლიენტის მოთხოვნებიდან გამომდინარე.",
       ],
       sliderAlt: {
         one: "სლაიდერი 1",
@@ -355,9 +355,9 @@ const translations: Record<Locale, Translations> = {
     projects: {
       header: {
         eyebrow: "ჩვენი პროექტები",
-        title: "არჩეული ნამუშევრები პროდუქტის, პლატფორმისა და ბრენდისთვის.",
+        title: "ჩვენი ბოლო პროექტები, სადაც ნათლად ჩანს სტრატეგიის, დიზაინისა და განვითარების პრაქტიკული განხორციელება",
         description:
-          "მოკლე მიმოხილვა იმ ამოცანებისა, რომელსაც ვაგვარებთ: კონვერსია, წარმადობა და ვიზუალური ისტორია.",
+          "ყოველი პროექტი გამოხატავს ჩვენს ფოკუსს ხარისხზე, მაღალ წარმადობასა და მომხმარებელზე ორიენტირებულ დიზაინზე.",
       },
       label: "პროექტები",
       visit: "ვებსაიტის ნახვა",
@@ -432,7 +432,7 @@ const translations: Record<Locale, Translations> = {
           subtitle:
             "სუფთა e-commerce გამოცდილება, რომელიც შექმნილია მარტივი პროდუქტის ძიებისა და სწრაფი checkout-ისთვის.",
           teamLine:
-            "ჩვენმა გუნდმა Lilien Store-ისთვის შექმნა სრულად რესპონსიული e-commerce ვებსაიტი გამორჩეული UI/UX დიზაინით.",
+            "ჩვენმა გუნდმა Lilien Store-ისთვის შექმნა ყველა მოწყობილობაზე მორგებული e-commerce ვებსაიტი გამორჩეული UI/UX დიზაინით.",
           detail:
             "Lilien Store არის თანამედროვე e-commerce პლატფორმა მკაფიო კატალოგით, მარტივი ნავიგაციით და სწრაფი checkout პროცესით.",
           images: {
@@ -467,11 +467,11 @@ const translations: Record<Locale, Translations> = {
     contact: {
       header: {
         eyebrow: "დაგვიკავშირდით",
-        title: "მოგვეცით შესაძლებლობა შევქმნათ თქვენი პროდუქტის შემდეგი თავი.",
+        title: "ჩვენ დაგეხმარებით იდეების რეალურ პროდუქტებად გარდაქმნაში.",
         description:
-          "მოიტანეთ ხედვა, გამოწვევა ან გაშვების თარიღი. ჩვენ დაგეხმარებით რაღაც დასამახსოვრებლის შექმნაში.",
+          "გაქვს ბიზნესი, იდეა ან პროექტი? დაგვიკავშირდი — დაგეხმარებით მის სრულფასოვან პროდუქტად ჩამოყალიბებაში.",
       },
-      badge: "თვალები",
+      badge: "",
       eyes: {
         success: "შეტყობინება მივიღეთ! მალე გიპასუხებთ.",
         missingAt: "აკლია @",
