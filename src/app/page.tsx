@@ -1,32 +1,32 @@
-"use client";
-
-import { useEffect } from "react";
+import type { Metadata } from "next";
+import Link from "next/link";
+import { LocaleRedirect } from "@/components/LocaleRedirect";
 import { defaultLocale } from "@/i18n/translations";
 
-const LOCALE_COOKIE_PATTERN = /(?:^|;\s*)locale=(en|ka)(?:;|$)/;
+const redirectPath = `/${defaultLocale}`;
 
-const getPreferredLocale = () => {
-  if (typeof document === "undefined") {
-    return defaultLocale;
-  }
-
-  const match = document.cookie.match(LOCALE_COOKIE_PATTERN);
-  return match?.[1] ?? defaultLocale;
+export const metadata: Metadata = {
+  title: {
+    absolute: "Weby",
+  },
+  alternates: {
+    canonical: redirectPath,
+  },
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 export default function Home() {
-  useEffect(() => {
-    const nextLocale = getPreferredLocale();
-    window.location.replace(`/${nextLocale}`);
-  }, []);
-
   return (
     <main className="grid min-h-screen place-items-center px-6 text-center">
+      <LocaleRedirect to={redirectPath} />
       <p className="text-sm text-muted">
         Redirecting...
-        <a className="ml-2 underline" href={`/${defaultLocale}`}>
+        <Link className="ml-2 underline" href={redirectPath}>
           Continue
-        </a>
+        </Link>
       </p>
     </main>
   );

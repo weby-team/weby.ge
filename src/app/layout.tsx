@@ -3,14 +3,13 @@ import { Manrope, Syne } from "next/font/google";
 import "./globals.css";
 import { ScrollToTopOnLoad } from "@/components/ScrollToTopOnLoad";
 import { defaultLocale } from "@/i18n/translations";
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://weby.ge";
-const normalizedSiteUrl = siteUrl.startsWith("http")
-  ? siteUrl
-  : `https://${siteUrl}`;
-const siteOrigin = normalizedSiteUrl.replace(/\/$/, "");
-const socialImagePath = "/images/weby-logo.jpg";
-const socialImageUrl = `${siteOrigin}${socialImagePath}`;
+import {
+  faviconPath,
+  normalizedSiteUrl,
+  siteDescription,
+  siteName,
+  socialImageUrl,
+} from "@/lib/site";
 
 const bodyFont = Manrope({
   variable: "--font-body",
@@ -31,21 +30,49 @@ const displayFont = Syne({
 
 export const metadata: Metadata = {
   metadataBase: new URL(normalizedSiteUrl),
+  applicationName: siteName,
+  manifest: "/manifest.webmanifest",
   title: {
-    default: "Weby",
+    default: siteName,
     template: "%s | Weby",
   },
   alternates: {
     canonical: "/",
   },
-  description:
-    "A modern portfolio landing page for a three-person studio specializing in premium web experiences.",
+  description: siteDescription,
+  keywords: [
+    "Weby",
+    "web design studio",
+    "business websites",
+    "website development",
+    "portfolio studio",
+    "Georgia web studio",
+  ],
+  authors: [{ name: siteName, url: normalizedSiteUrl }],
+  creator: siteName,
+  publisher: siteName,
+  category: "technology",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  icons: {
+    icon: [{ url: faviconPath, type: "image/jpeg", sizes: "1080x1080" }],
+    shortcut: [faviconPath],
+    apple: [{ url: faviconPath, sizes: "1080x1080" }],
+  },
   openGraph: {
-    title: "Weby",
+    title: siteName,
     url: "/",
-    siteName: "Weby",
-    description:
-      "A modern portfolio landing page for a three-person studio specializing in premium web experiences.",
+    siteName,
+    description: siteDescription,
     type: "website",
     images: [
       {
@@ -60,9 +87,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Weby",
-    description:
-      "A modern portfolio landing page for a three-person studio specializing in premium web experiences.",
+    title: siteName,
+    description: siteDescription,
     images: [socialImageUrl],
   },
 };

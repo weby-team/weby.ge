@@ -1,9 +1,11 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ContactSection } from "@/features/landing/components/ContactSection";
 import { HeroAboutStack } from "@/features/landing/components/HeroAboutStack";
 import { MotionSection } from "@/features/landing/components/MotionSection";
 import { ProjectsSection } from "@/features/landing/components/ProjectsSection";
 import { getProjects } from "@/features/landing/data/projects";
+import { getPageMetadata } from "@/lib/site";
 import {
   getTranslations,
   isLocale,
@@ -18,6 +20,14 @@ type PageProps = {
 
 export function generateStaticParams() {
   return [{ locale: "en" }, { locale: "ka" }];
+}
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { locale } = await params;
+
+  return getPageMetadata(locale);
 }
 
 export default async function Home({ params }: PageProps) {
