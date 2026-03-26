@@ -12,12 +12,14 @@ export const normalizedSiteUrl = siteUrl.startsWith("http")
   ? siteUrl
   : `https://${siteUrl}`;
 export const siteOrigin = normalizedSiteUrl.replace(/\/$/, "");
-export const siteTitle = "Weby | Business Website Studio";
+export const siteTitle = "Weby";
 export const siteDescription =
   "We build high-quality business websites that combine strategy, performance, and design to help companies grow credibility and attract customers.";
 export const socialImagePath = "/images/weby-logo.jpg";
 export const socialImageUrl = `${siteOrigin}${socialImagePath}`;
-export const faviconPath = "/images/favicon.jpg";
+export const faviconPath = "/favicon.png";
+export const faviconIcoPath = "/favicon.ico";
+export const appleTouchIconPath = "/apple-touch-icon.png";
 
 const localeMetadata: Record<
   Locale,
@@ -33,7 +35,7 @@ const localeMetadata: Record<
     openGraphLocale: "en_US",
   },
   ka: {
-    title: "Weby | ბიზნეს ვებსაიტების სტუდია",
+    title: siteName,
     description:
       "ვქმნით მაღალი ხარისხის ბიზნეს ვებსაიტებს, რომლებიც აერთიანებს სტრატეგიას, წარმადობას და დიზაინს, რათა კომპანიებმა მეტი ნდობა და მომხმარებელი მოიზიდონ.",
     openGraphLocale: "ka_GE",

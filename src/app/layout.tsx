@@ -4,7 +4,9 @@ import "./globals.css";
 import { ScrollToTopOnLoad } from "@/components/ScrollToTopOnLoad";
 import { defaultLocale } from "@/i18n/translations";
 import {
+  appleTouchIconPath,
   faviconPath,
+  faviconIcoPath,
   normalizedSiteUrl,
   siteDescription,
   siteName,
@@ -64,9 +66,12 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: [{ url: faviconPath, type: "image/jpeg", sizes: "1080x1080" }],
-    shortcut: [faviconPath],
-    apple: [{ url: faviconPath, sizes: "1080x1080" }],
+    icon: [
+      { url: faviconIcoPath, sizes: "any" },
+      { url: faviconPath, type: "image/png", sizes: "512x512" },
+    ],
+    shortcut: [faviconIcoPath],
+    apple: [{ url: appleTouchIconPath, sizes: "180x180", type: "image/png" }],
   },
   openGraph: {
     title: siteName,
